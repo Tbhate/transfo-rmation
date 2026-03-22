@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  padding: 40px;
+}
+
+#adminForm {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+}
+
+#adminForm h1 {
+  margin-bottom: 10px;
+}
+
+#adminForm h3 {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+/* 🔥 Главное — автоматическая сетка */
+#adminForm {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px 20px;
+}
+
+/* Заголовки занимают всю ширину */
+#adminForm h1,
+#adminForm h3 {
+  grid-column: 1 / -1;
+}
+#adminForm {
+  padding-bottom: 120px;
+}
+input {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4c6ef5;
+  box-shadow: 0 0 0 3px rgba(76,110,245,0.1);
+}
+
+.save-btn {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 16px 40px;
+  font-size: 15px;
+  font-weight: 600;
+
+  background: #4c6ef5;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(76,110,245,0.3);
+
+  transition: all 0.2s ease;
+  z-index: 1000;
+}
+.save-btn:hover {
+  background: #3b5bdb;
+  box-shadow: 0 12px 30px rgba(76,110,245,0.4);
+  transform: translateX(-50%) scale(1.05);
+}
+.save-btn:active {
+  transform: translateX(-50%) scale(0.97);
+  box-shadow: 0 6px 15px rgba(76,110,245,0.3);
+}
+
+
+
+/* 📱 Планшеты */
+@media (min-width: 992px) {
+
+  /* отступ после каждого 3-го элемента */
+    #adminForm input:nth-of-type(1n) {
+    margin-bottom: 20px;
+  }
+    #adminForm input:nth-of-type(2n) {
+    margin-bottom: 20px;
+  }
+    
+  #adminForm input:nth-of-type(3n) {
+    margin-bottom: 20px;
+  }
+
+}
+@media (max-width: 992px) {
+
+  #adminForm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* каждый 4-й элемент (новый ru) начинается с новой строки */
+  #adminForm input:nth-of-type(3n + 1) {
+    grid-column: 1;
+  }
+   /* 🔥 Отступ после каждого 3-го элемента (pl) */
+  #adminForm input:nth-of-type(3n) {
+    margin-bottom: 25px;
+  }
+
+}
+
+/* 📱 Телефоны */
+@media (max-width: 600px) {
+  #adminForm {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  input {
+    font-size: 16px; /* чтобы не было zoom на iPhone */
+  }
+
+  .save-btn {
+    width: 90%;
+    max-width: 400px;
+    padding: 14px 20px;
+    font-size: 14px;
+    bottom: 15px;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+
+  #adminForm {
+    grid-template-columns: 1fr;
+  }
+
+  /* добавляем отступ после каждого третьего поля */
+  #adminForm input:nth-of-type(3n) {
+    margin-bottom: 25px;
+  }
+
+}
