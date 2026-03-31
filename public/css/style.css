@@ -342,7 +342,7 @@ header {
   gap: 5px;
 }
 .header-list p {
-  padding: 15px 30px 15px 30px;
+  padding: 15px 20px 15px 20px;
 
   color: #ffffff;
   font-weight: 600;
@@ -434,7 +434,7 @@ WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
 .main-sect {
   position: relative;
   padding: 0px 150px;
-  height: 860px;
+  height: 750px;
 }
 .main-sect {
   opacity: 0;
@@ -451,29 +451,29 @@ WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
 }
 .main-num {
   position: relative;
-  width: 583px;
+  width: 400px;
   height: 255px;
+  padding-top: 50px;
 }
 
 .main-number {
   color: #b770f5;
   font-weight: 400;
-  font-size: 52px;
+  font-size: 42px;
 }
 .main-text {
   color: #ffffff;
   font-weight: 800;
-  font-size: 29px;
+  font-size: 22px;
 }
 
 .left-text .main-text {
-  width: 260px;
+  width: 220px;
 }
 .right-text {
-  right: 0;
+  left: 15px;
   top: 110px;
   position: absolute;
-  margin-left: auto;
   text-align: right;
 }
 .main-rightblock {
@@ -516,46 +516,47 @@ WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
   transform: translateX(-50%);
   max-width: 1900px;
   width: 100%;
-  height: 376px;
+  height: 300px;
 }
 .main-block-text h2 {
   color: #ffffff;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 24px;
 }
 
 .main-first-text {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 40px;
 }
 .main-f-text {
   font-weight: 400;
-  font-size: 130px;
+  font-size: 112px;
   color: #ffffff;
   font-family: "Benzin-ExtraBold";
 }
 
 .main-s-text {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 14px;
   color: #ffffff;
+  max-width: 400px;
 }
 .main-line {
   height: 6px;
-  width: calc(100% - 1150px);
-  top: 253px;
+  width: calc(100% - 1040px);
+  top: 210px;
   position: absolute;
   background: linear-gradient(90deg, #ffffff00, #ffffff);
 }
 .main-f2-text {
   font-weight: 400;
-  font-size: 130px;
+  font-size: 112px;
   color: #ffffff;
   text-align: right;
   font-family: "Benzin-ExtraBold";
   position: absolute;
-  bottom: 34px;
+  bottom: 17px;
   right: 150px;
 }
 .main-small-text {
@@ -618,7 +619,7 @@ WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
     letter-spacing: 30%;
   }
   .main-line {
-    top: 77px;
+    top: 75px;
     background: linear-gradient(90deg, #00000000, #000);
     width: 33px;
     height: 3px;
@@ -802,7 +803,7 @@ WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
   letter-spacing: -0.06em;
   width: 344px;
   padding-bottom: 200px;
-  margin-left: 320px;
+  margin-left: 120px;
 }
 .who-foot-sectext {
   position: absolute;
@@ -993,7 +994,7 @@ WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW  */
   color: #ffffff;
   width: 827px;
   text-align: center;
-  transform: translateY(-50px) translateX(calc(-10% - 10vw));
+  transform: translateY(-80px) translateX(calc(-10% - 10vw));
   padding-bottom: 46px;
 }
 .accent {
@@ -1053,7 +1054,7 @@ WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW  */
   font-size: 23px;
   letter-spacing: -0.06em;
   padding-top: 39px;
-  width: 357px;
+  width: 257px;
 }
 
 .what-text-3 {
@@ -1201,6 +1202,8 @@ WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW  */
   .what-title {
     font-size: 31px;
     width: 370px;
+
+        transform: translateY(-30px) translateX(calc(7% - 10vw));
   }
   .what-container {
     padding: 0;
@@ -1765,6 +1768,17 @@ WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
   color: #fff;
   text-align: center;
 }
+.footer-design a{
+  transition: transform 0.3s ease;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+.footer-design a:hover{
+
+  transform: scale(1.07);
+}
+
 
 /*  */
 

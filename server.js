@@ -62,6 +62,6 @@ app.post("/api/save", (req, res) => {
 
 // -------------------------------------------
 // Запуск сервера
-app.listen(PORT, () => {
-  console.log(`Server started at http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server started on port ${PORT}`);
 });
