@@ -346,12 +346,18 @@ header {
 
   color: #ffffff;
   font-weight: 600;
+  transition: transform 0.3s ease;
+
 }
 .header-list li {
-  transition: transform 0.3s ease;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 999px;
+
 }
 .header-list li:hover {
   transform: scale(1.07);
+   box-shadow: 0 0 0 2px #fff;
+  border-radius: 999px;
 }
 .activeq {
   border: 2px solid #ffffff;
@@ -1365,7 +1371,7 @@ WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
   gap: 45px;
   background-color: #fff;
   border-radius: 37px;
-  height: 1095px;
+  height: 1155px;
 }
 .format-first p {
   font-weight: 500;
@@ -1392,7 +1398,7 @@ WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
   gap: 45px;
   background-color: #fff;
   border-radius: 37px;
-  height: 1955px;
+  height: 2005px;
 }
 .format-second p {
   font-weight: 500;
@@ -1434,7 +1440,19 @@ WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
 .format-img {
   display: none;
 }
+.text-image{
+display: none;
+  position: absolute;
+  top: 40px;
+  left: 70px;
+  z-index: 5;
+  font-weight: 600;
+  color: #fff;
+}
 @media (max-width: 700px) {
+.text-image{
+  display: block;
+}
   .format {
     position: relative;
     background:
@@ -1468,7 +1486,7 @@ WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
   .format-first {
     position: relative;
     height: 750px;
-    gap: 30px;
+    gap:24px;
     padding: 31px;
     width: 90vw;
   }
@@ -1492,7 +1510,7 @@ WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
   }
   .format-second {
     position: relative;
-    height: 1480px;
+    height: 1530px;
     gap: 30px;
 
     padding: 31px;
@@ -1508,6 +1526,7 @@ WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
   .format-logoname {
     display: none;
   }
+  
 }
 /* gallery  
 WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
